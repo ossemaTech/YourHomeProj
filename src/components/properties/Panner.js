@@ -1,27 +1,27 @@
 import React, { useState } from "react";
-import img from "./icons/panner-bg.png";
+import img from "./icons/panner-bg2.jpg";
 import searchIcon from "../home/icons/search.png";
 import {formatPrice} from '../helpers/functions'
 import {getStr} from '../../actions/language'
 
 
-const style = {
-  container: {
-    background: `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(${img})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    textAlign: "center",
-  },
-};
 
 
 
-const Panner = ({ categories, settings, formData, setFormData, onSubmit, title, cities, lang }) => {
+
+const Panner = ({ categories, settings, formData, setFormData, onSubmit, title, cities, lang, imgPanner }) => {
 
   
   
-  
+  const style = {
+    container: {
+      background: `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(${imgPanner})`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      textAlign: "center",
+    },
+  };
 
   const onChange = (ev) =>
     setFormData({ ...formData, [ev.target.name]: ev.target.value });

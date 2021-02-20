@@ -9,6 +9,7 @@ import {getProperties} from '../../actions/properties'
 import PropertiesGrid from './PropertiesGrid'
 import Pagination from '../layout/Pagination'
 import {getStr} from '../../actions/language'
+import BgPanner from "./icons/bg-panner.jpg";
 
 const getQueryParams = (search) => 
     search.replace('?', '').split('&').reduce((r,e) => (r[e.split('=')[0]] = decodeURIComponent(e.split('=')[1]), r), {});
@@ -72,7 +73,7 @@ const Catalog = ({category: {categories, loading}, getCategories, filterSettings
         <div>
             {
                 loading || !categories || !filterSettings.settings || filterSettings.loading ? (<Spinner/>) : (
-                    <Panner title={getStr('link-properties')} onSubmit={onSubmit} categories={categories} settings={filterSettings.settings} formData={formData} setFormData={setFormData} cities={filterSettings.cities} lang={lang}/>
+                    <Panner imgPanner={BgPanner} title={getStr('link-properties')} onSubmit={onSubmit} categories={categories} settings={filterSettings.settings} formData={formData} setFormData={setFormData} cities={filterSettings.cities} lang={lang}/>
                 )
             }
 

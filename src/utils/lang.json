@@ -647,14 +647,24 @@
         "ar" : "خدمات الشركة"
     },
 
+    "heading-contact": {
+        "en" : "Looking for More?",
+        "ar": "تعرف على المزيد"
+    },
+
+    "contact-property": {
+        "en": "Browse Property",
+        "ar" : "تصفح العقارات"
+    },
+
     "desc-contact" : {
         "en" : "Looking to Buy a new property or Sell an existing one? YourHome \n provides an awesome solution!",
         "ar" : "تبحث لشراء عقار جديد أو بيع عقار موجود؟ يوفر منزلك حلاً رائعًا!"
     },
 
     "desc-contact2" : {
-        "en" : "Looking to Buy a new property or Sell an existing one? RealHomes \n provides an awesome solution!",
-        "ar" : "تبحث لشراء عقار جديد أو بيع عقار موجود؟ توفر المنازل الحقيقية حلاً رائعًا!"
+        "en" : "Talk to our experts or Browse \n through more properties",
+        "ar" : "تحدث إلى خبرائنا أو تصفح المزيد من العقارات"
     },
 
     "title-contactus" : {
@@ -663,7 +673,7 @@
     },
 
     "btn-contact" : {
-        "en" : "Contact",
+        "en" : "Get In Touch",
         "ar" : "اتصل بنا"
     },
 

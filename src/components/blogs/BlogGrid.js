@@ -12,6 +12,7 @@ import {list} from '../../actions/blog'
 import {connect} from 'react-redux'
 import Spinner from '../layout/Spinner'
 import {getStr} from '../../actions/language'
+import BgPanner from "./icons/bg-panner.jpg";
 
 
 const style = {
@@ -83,7 +84,7 @@ const BlogGrid = ({category: {categories},list, article: {articles, loading, doc
 
             {
                !categories || !filterSettings.settings || filterSettings.loading ? (<Spinner/>) : (
-                    <Panner title={getStr('link-blog')} onSubmit={onSubmit} categories={categories} settings={filterSettings.settings} formData={formData} setFormData={setFormData} cities={filterSettings.cities}/>
+                    <Panner title={getStr('link-blog')} onSubmit={onSubmit} categories={categories} settings={filterSettings.settings} formData={formData} setFormData={setFormData} cities={filterSettings.cities} imgPanner={BgPanner}/>
                 )
             }
             <div className="container">

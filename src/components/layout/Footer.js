@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import logo from './logo.svg'
+import logo from './logo yhfor motion-01.svg'
 import home from './home.png'
 import phone from './phone.png'
 import {Link, useHistory} from 'react-router-dom'

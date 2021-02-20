@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import logo from "./logo.svg";
+import logo from "./logo yhfor motion-01.svg";
 import {Link, useHistory} from 'react-router-dom'
 import "./style.css";
 import en_flag from './en-flag.png'

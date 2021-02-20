@@ -14,9 +14,14 @@ const Contact = () => {
             {eval(JSON.stringify(getStr('desc-contact')))}
           </h1>
         </div>
-        <button className="btn btn-warning btn-lg d-block m-auto btn-contact" style={{fontSize:"18px", fontWeight:"500", background:"#FFCF0A"}}>
-          <Link to="/contact"> {getStr('contact')} </Link>
-        </button>
+        <div className="box-btn-contat d-flex">
+          <button className="btn btn-warning btn-lg d-block btn-contact" style={{fontSize:"18px", fontWeight:"500", background:"#FFCF0A", margin:"0 10px 80px auto"}}>
+            <Link to="/contact"> {getStr('contact')} </Link>
+          </button>
+          <button className="btn btn-white btn-lg d-block btn-contact" style={{fontSize:"18px", fontWeight:"500", background:"#fff", margin:"0 auto 80px 0"}}>
+            <Link to="/contact"> {getStr('contact-property')} </Link>
+          </button>
+        </div>
         <img src={left_effect} alt="" style={{color: '#fff', marginBottom: '-1px', width: '100%'}} />
       </section>
     );
