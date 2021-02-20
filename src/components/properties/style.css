@@ -429,6 +429,21 @@ ul.overview-list li span {
     margin-top: 40px;
 }
 
+#propertyPage .services ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#propertyPage .services ul li {
+    flex-basis: 50%;
+    font-size: 19px;
+    padding: 0px 0px 15px 0;
+}
+
+#propertyPage .services ul li:nth-child(even) {
+    text-align: center !important;
+}
+
 #propertyPage .nearby {
     margin-top: 40px;
 }
